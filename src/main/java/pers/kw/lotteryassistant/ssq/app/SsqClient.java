@@ -58,17 +58,17 @@ public class SsqClient {
 	 */
 	public static void main(String[] args) {
 		//initDB();
-		//synData();
-		//calcMiss();
-		//calcCountOfNum();
+		synData();
+		calcMiss();
+		calcCountOfNum();
 		
-		Integer a[] = {2,6,7,8,23,25,33};
-		List<String> result = DataUtil.mInN(a, 7, 6,0);
-		for(String r : result){
-			if(exist(r)){
-				System.out.println(r + " is find.");
-			}
-		}
+//		Integer a[] = {2,6,7,8,23,25,33};
+//		List<String> result = DataUtil.mInN(a, 7, 6,0);
+//		for(String r : result){
+//			if(exist(r)){
+//				System.out.println(r + " is find.");
+//			}
+//		}
 	}
 
 }

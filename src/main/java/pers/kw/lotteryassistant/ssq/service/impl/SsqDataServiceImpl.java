@@ -42,7 +42,7 @@ public class SsqDataServiceImpl implements SsqDataService {
 	@Override
 	public void initDB() {
 		/**
-		 * [ssq_sum]��ֵ���ʼ��
+		 * [ssq_sum]锟斤拷值锟斤拷锟绞硷拷锟�
 		 */
 		List<GlobalConfig> cs = globalConfigDao.find("select c from GlobalConfig c where c.configCode = 'SSQ_DB_INIT_STATUS' and c.validity = 1");
 		if(cs == null || cs.size() <= 0){
@@ -50,7 +50,7 @@ public class SsqDataServiceImpl implements SsqDataService {
 		}
 		GlobalConfig initStatus = cs.get(0);
 		if(initStatus.getConfigValue().equals("1")){
-			System.err.println("����Ҫ�ظ���ʼ��DB��");
+			System.err.println("锟斤拷锟斤拷要锟截革拷锟斤拷始锟斤拷DB锟斤拷");
 			return ;
 		}
 		
@@ -78,7 +78,7 @@ public class SsqDataServiceImpl implements SsqDataService {
 		}
 		GlobalConfig initStatus = cs.get(0);
 		if(initStatus.getConfigValue().equals("1")){
-			System.err.println("����Ҫ�ظ���ʼ��DATA��");
+			System.err.println("锟斤拷锟斤拷要锟截革拷锟斤拷始锟斤拷DATA锟斤拷");
 			return rowCount;
 		}
 		
